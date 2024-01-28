@@ -23,14 +23,17 @@ Welcome to the Number Guessing Game! This simple React application allows users 
 
    ```bash
    git clone https://github.com/your-username/number-guessing-game.git
+   ```
 
 2. Navigate to the project directory:
   ```bash
   cd number-guessing-game
+  ```
 
 3. Install dependencies:
   ```bash
   npm install
+  ```
 
 ## Usage
 
@@ -38,6 +41,7 @@ Welcome to the Number Guessing Game! This simple React application allows users 
 
   ```bash
   npm start
+  ```
 
 
 The app will be accessible at http://localhost:3000.
