@@ -26,11 +26,13 @@ Welcome to the Number Guessing Game! This simple React application allows users 
    ```
 
 2. Navigate to the project directory:
+   
   ```bash
   cd number-guessing-game
   ```
 
 3. Install dependencies:
+   
   ```bash
   npm install
   ```
