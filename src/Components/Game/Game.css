@@ -1,0 +1,78 @@
+.gameContainer{
+    padding:0 50px ;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+.gameTitle{
+    font-size: 60px;
+    font-weight: 600;
+}
+.gameTitle span{
+    color:rgb(70, 0, 128);
+}
+.input{
+    display: block;
+    background: none;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 40px;
+    width: max-content;
+}
+.g{
+    padding: 20px 0;
+    flex: 20px;
+    font-size: 30px;
+}
+.success{
+    color: green;
+}
+.smaller .b{
+    color: crimson;
+}
+.larger .b{
+    color: crimson;
+}
+.invalid{
+    color: crimson;
+}
+.lose{
+    color: crimson;
+}
+.gameSubmit{
+    background-color: rgb(70, 0, 128);
+    width: max-content;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+    margin-right: 10px;
+}
+ .gameRestart{
+    width: max-content;
+    border-radius: 10px;
+    padding: 20px;
+    color:rgb(70, 0, 128);
+    border: 1px solid rgb(70, 0, 128);
+    background-color: none;
+}
+.chances{
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+.chances span{
+    color:rgb(70, 0, 128);
+}
+.gameSubmit:hover , .gameRestart:hover{
+    scale: 1.05;
+
+}
+.gameSubmit:active , .gameRestart:active{
+    scale: 0.9;
+}
