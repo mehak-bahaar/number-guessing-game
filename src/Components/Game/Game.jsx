@@ -15,7 +15,7 @@ const Game = () => {
     e.preventDefault()
     if(guess = ''){
         setSuccess('empty')
-      break;
+      
       }
     else(
     //count chances used
