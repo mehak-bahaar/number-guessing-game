@@ -15,7 +15,7 @@ const Game = () => {
     e.preventDefault()
     //count chances used
       setChances(chances+1)
-      setScore(10 - chances)
+      setScore(chances)
       // conditions
       if (chances > 10) {
         setsuccess("lose");
