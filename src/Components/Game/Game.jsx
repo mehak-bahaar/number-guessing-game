@@ -15,6 +15,7 @@ const Game = () => {
     e.preventDefault()
     //count chances used
       setChances(chances+1)
+      setScore(10 - chances)
       // conditions
       if (chances > 10) {
         setsuccess("lose");
@@ -81,7 +82,7 @@ const Game = () => {
           <div className="g invalid">Please Enter a valid number</div>
         )}
         {success == "success" && (
-          <div className="g success">You Won. Your Score is {score}</div>
+          <div className="g success">You Won. Your Score is {score} out of 10</div>
         )}
 
         {success !== "success" && (
