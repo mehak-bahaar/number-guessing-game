@@ -35,7 +35,6 @@ const Game = () => {
         setsuccess("success");
         setScore(chances);
         setChances(0);
-        setScore(0);
       }
       
       
