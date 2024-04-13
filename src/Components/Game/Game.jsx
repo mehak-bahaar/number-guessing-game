@@ -13,11 +13,19 @@ const Game = () => {
   const onClick= (e) =>{
     //prevent page reload
     e.preventDefault()
+    if(guess = ''){
+        setSuccess('empty')
+      break;
+      }
+    else(
     //count chances used
       setChances(chances+1)
       setScore(10 - (chances + 1 ))
       // conditions
-      if (10 - chances < 1) {
+      if(guess = ''){
+        setSuccess('empty')
+      }
+      else if (10 - chances < 1) {
         setsuccess("lose");
         setChances(0);
         setScore(0);
@@ -35,7 +43,8 @@ const Game = () => {
         setsuccess("success");
         setScore(chances);
         setChances(0);
-      }
+        
+      })
       
       
     
@@ -64,6 +73,9 @@ const Game = () => {
           id="guess"
           onChange={onChange}
         />
+        {success == 'empty' && (
+          <div className = 'g lose'>This field cannot be empty.</div>
+        )}
         {success == "lose" && (
           <div className=" g lose">You lose. You used all your chances.</div>
         )}
@@ -92,7 +104,7 @@ const Game = () => {
           </div>
         )}
         <button
-          disabled={success === "lose" || success === "success"}
+          disabled={success === "lose" || success === "success" || success === "empty"}
           type="submit"
           className="gameSubmit"
         >
