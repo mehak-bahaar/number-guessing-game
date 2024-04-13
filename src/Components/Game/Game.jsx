@@ -13,7 +13,7 @@ const Game = () => {
   const onClick= (e) =>{
     //prevent page reload
     e.preventDefault()
-    if(guess = ''){
+    if(guess == ''){
         setSuccess('empty')
       
       }
