@@ -20,6 +20,7 @@ const Game = () => {
       if (chances > 10) {
         setsuccess("lose");
         setChances(0);
+        setScore(0);
         const randomNumber = Math.floor(Math.random() * 100) + 1;
         setNumber(randomNumber);
       } else if (guess >= 100 || guess < 0) {
@@ -34,6 +35,7 @@ const Game = () => {
         setsuccess("success");
         setScore(chances);
         setChances(0);
+        setScore(0);
       }
       
       
@@ -43,9 +45,9 @@ const Game = () => {
     e.preventDefault()
     const randomNumber = Math.floor(Math.random() * 100) + 1;
     setNumber(randomNumber);
-    setsuccess('restart')
-    setScore(10 - chances)
-    setChances(0)
+    setsuccess('restart');
+    setChances(0);
+    setScore(0);
   }
   const onChange = (e) => {
     setGuess(parseInt(e.target.value))
@@ -91,7 +93,7 @@ const Game = () => {
           </div>
         )}
         <button
-          disabled={success === "lose"}
+          disabled={success === "lose" || success === "success"}
           type="submit"
           className="gameSubmit"
         >
