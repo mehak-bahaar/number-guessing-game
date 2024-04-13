@@ -22,7 +22,7 @@ const Game = () => {
       setChances(chances+1)
       setScore(10 - (chances + 1 ))
       // conditions
-      if(guess = ''){
+      if(guess == ''){
         setSuccess('empty')
       }
       else if (10 - chances < 1) {
