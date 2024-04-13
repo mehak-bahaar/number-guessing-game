@@ -17,7 +17,7 @@ const Game = () => {
       setChances(chances+1)
       setScore(10 - (chances + 1 ))
       // conditions
-      if (chances = 0) {
+      if (chances = 1) {
         setsuccess("lose");
         setChances(0);
         setScore(0);
