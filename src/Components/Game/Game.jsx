@@ -14,16 +14,16 @@ const Game = () => {
     //prevent page reload
     e.preventDefault()
     if(guess == ''){
-        setsuccess('empty')
+        setsuccess('empty');
       
       }
     else{
     //count chances used
-      setChances(chances+1)
-      setScore(10 - (chances + 1 ))
+      setChances(chances+1);
+      setScore(10 - (chances + 1 ));
       // conditions
       if(guess == ''){
-        setsuccess('empty')
+        setsuccess('empty');
       }
       else if (10 - chances < 1) {
         setsuccess("lose");
