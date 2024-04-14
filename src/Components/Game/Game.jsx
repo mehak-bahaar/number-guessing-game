@@ -14,7 +14,7 @@ const Game = () => {
     //prevent page reload
     e.preventDefault()
     if(guess == ''){
-        setSuccess('empty')
+        setsuccess('empty')
       
       }
     else(
@@ -23,7 +23,7 @@ const Game = () => {
       setScore(10 - (chances + 1 ))
       // conditions
       if(guess == ''){
-        setSuccess('empty')
+        setsuccess('empty')
       }
       else if (10 - chances < 1) {
         setsuccess("lose");
