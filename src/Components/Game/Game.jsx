@@ -17,7 +17,7 @@ const Game = () => {
         setsuccess('empty')
       
       }
-    else(
+    else{
     //count chances used
       setChances(chances+1)
       setScore(10 - (chances + 1 ))
@@ -44,7 +44,7 @@ const Game = () => {
         setScore(chances);
         setChances(0);
         
-      })
+      }}
       
       
     
